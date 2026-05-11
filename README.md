@@ -21,20 +21,20 @@ A ROS2 repo of LiDAR-Visual-Inertial system intended for GNSS denied application
   cmake ..
   sudo make install
   ```
-- [OpenCV 4.8.0] (https://github.com/opencv/opencv/releases/tag/4.8.0) (Computer Vision library)
+- [OpenCV 4.8.0](https://github.com/opencv/opencv/releases/tag/4.8.0) (Computer Vision library)
 
   ```
   sudo apt-get install libopencv-dev
   
   ```
-- [PCL 1.14.0] (https://github.com/PointCloudLibrary/pcl/releases/tag/pcl-1.14.0) (Point Cloud Library)
+- [PCL 1.14.0](https://github.com/PointCloudLibrary/pcl/releases/tag/pcl-1.14.0) (Point Cloud Library)
 
   ```
   sudo apt-get install libpcl-dev  
 
   ```
 
-- [gtsam 4.0.2] (https://github.com/borglab/gtsam/releases/tag/4.0.2) (Georgia Tech Smoothing and Mapping library)
+- [gtsam 4.0.2](https://github.com/borglab/gtsam/releases/tag/4.0.2) (Georgia Tech Smoothing and Mapping library)
 
   ```
   wget -O ~/Downloads/gtsam.zip [https://github.com/borglab/gtsam/archive/4.0.2.zip](https://github.com/borglab/gtsam/archive/4.0.2.zip)
@@ -46,7 +46,7 @@ A ROS2 repo of LiDAR-Visual-Inertial system intended for GNSS denied application
 
   ```
 
-- [Ceres Solver 2.2.0](https://github.com/ceres-solver/ceres-solver/releases/tag/2.2.0)(C++ library for modeling and solving large, complicated optimization problems)
+- [Ceres Solver 2.2.0](https://github.com/ceres-solver/ceres-solver/releases/tag/2.2.0) (C++ library for modeling and solving large, complicated optimization problems)
 
   ```
   sudo apt-get install -y libgoogle-glog-dev libatlas-base-dev libsuitesparse-dev
