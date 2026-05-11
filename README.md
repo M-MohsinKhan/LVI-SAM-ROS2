@@ -82,13 +82,6 @@ If you are experiencing a freeze on your PC, you can use -j2 or -j4 parallel wor
 
 The data-gathering sensor suite includes: Robosense Helio-16 lidar, Fixposition Vision RTK2 for IMU and Monocular Camera.
 
-
-
-<p align='center'>
-    <img src="./doc/jackal-earth.png" alt="drawing" width="286.5"/>
-    <img src="./doc/handheld-earth.png" alt="drawing" width="328"/>
-</p>
-
 ---
 
 ## Run the package
@@ -101,40 +94,22 @@ Configure sensor parameters in the .yaml files in the ```config``` folder.
 
 2. Run the launch file:
 ```
-roslaunch lvi_sam run.launch
+ros2 launch lvi_sam run.launch.py
 ```
 
 3. Play existing bag files:
 ```
-rosbag play handheld.bag 
-```
+ros2 bag play yourbag/ 
+``` 
 
 ---
 
 ## TODO
 
-  - [ ] Update graph optimization using all three factors in imuPreintegration.cpp, simplify mapOptimization.cpp, increase system stability 
+  - [ ] Outdoor testing 
 
----
 
-## Paper 
-
-Thank you for citing our [paper](./doc/paper.pdf) if you use any of this code or datasets.
-
-```
-@inproceedings{lvisam2021shan,
-  title={LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping},
-  author={Shan, Tixiao and Englot, Brendan and Ratti, Carlo and Rus Daniela},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
-  pages={to-be-added},
-  year={2021},
-  organization={IEEE}
-}
-```
-
----
 
 ## Acknowledgement
 
-  - The visual-inertial odometry module is adapted from [Vins-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
-  - The lidar-inertial odometry module is adapted from [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/a246c960e3fca52b989abf888c8cf1fae25b7c25).
+  - The original version is from [LVI-SAM](https://github.com/TixiaoShan/LVI-SAM).
