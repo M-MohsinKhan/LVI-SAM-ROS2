@@ -12,7 +12,7 @@ A ROS2 repo of LiDAR-Visual-Inertial system intended for GNSS denied application
 
 - [ROS 2](https://docs.ros.org/en/jazzy/Installation.html) (Tested with ROS 2 Jazzy on Ubuntu 24.04 ARM64)
 
-- [Eigen 3.4.0](C++ template library for linear algebra)
+- [Eigen 3.4.0](https://gitlab.com/libeigen/eigen/-/releases/3.4.0) (C++ template library for linear algebra)
   ```bash
   wget -O ~/Downloads/eigen-3.4.0.tar.gz [https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz](https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz)
   cd ~/Downloads/ && tar -xzf eigen-3.4.0.tar.gz
