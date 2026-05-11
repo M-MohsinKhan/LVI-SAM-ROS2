@@ -1,0 +1,75 @@
+/**:
+  ros__parameters:
+    PROJECT_NAME: "lvi_sam"
+    robot_id: "roboat"
+    lvi_sam:
+      # Topics
+      pointCloudTopic: "/rslidar_points"
+      imuTopic: "/imu/data"
+
+      # Heading
+      useImuHeadingInitialization: true
+
+      # Export settings
+      savePCD: false
+      savePCDDirectory: "/results/"
+
+      # Sensor Settings
+      N_SCAN: 16
+      Horizon_SCAN: 1800
+      ang_y: 1.0
+      timeField: "timestamp"
+      downsampleRate: 1
+      lidarMinRange: 1.5  
+      lidarMaxRange: 50.0
+
+      # IMU Settings
+      imuAccNoise: 2.5204438138836063e-02
+      imuGyrNoise: 1.4927177105924072e-02
+      imuAccBiasN: 1.0739558582909998e-05
+      imuGyrBiasN: 1.0029730578800357e-05
+      imuGravity: 9.81007
+      imuHz: 200
+
+      # Extrinsics (IMU -> lidar)
+      extrinsicTrans: [-0.35, 0.0, 0.15]
+      extrinsicRot: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+      extrinsicRPY: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+
+      # LOAM feature threshold
+      edgeThreshold: 1.0
+      surfThreshold: 0.1
+      edgeFeatureMinValidNum: 10
+      surfFeatureMinValidNum: 100
+
+      # Voxel filter params
+      odometrySurfLeafSize: 0.4
+      mappingCornerLeafSize: 0.05
+      mappingSurfLeafSize: 0.1
+
+      # Robot motion constraint
+      z_tollerance: 1.0
+      rotation_tollerance: 0.1
+
+      # CPU Params
+      numberOfCores: 4
+      mappingProcessInterval: 0.15
+
+      # Surrounding map
+      surroundingkeyframeAddingDistThreshold: 0.5
+      surroundingkeyframeAddingAngleThreshold: 0.2
+      surroundingKeyframeDensity: 2.0
+      surroundingKeyframeSearchRadius: 50.0
+
+      # Loop closure
+      loopClosureEnableFlag: true
+      surroundingKeyframeSize: 25
+      historyKeyframeSearchRadius: 20.0
+      historyKeyframeSearchTimeDiff: 30.0
+      historyKeyframeSearchNum: 25
+      historyKeyframeFitnessScore: 0.3
+
+      # Visualization
+      globalMapVisualizationSearchRadius: 1000.0
+      globalMapVisualizationPoseDensity: 10.0
+      globalMapVisualizationLeafSize: 0.5
